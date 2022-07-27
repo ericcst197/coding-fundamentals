@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="Table_2.css"> -->
+    <title>My HTML Table</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 2px solid;
+            border-collapse: separate;
+            border-color: blue;
+
+        }
+
+        .bold {
+            font-weight: bold;
+            align-content: auto;
+        }
+    </style>
+</head>
+
+<p>Random table from <a href="https://www.pinterest.com/pin/598838081702785127/">here.</a></p>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="4">Purchase order:987654321</th>
+            <th colspan="2">Tutorialbrain - 10th Oct 2020</span></th>
+        </tr>
+        <tr rowspan="5">
+            <td colspan="3"><span class="bold">Vendor:</span><br>
+                ABC XYZ ltd.<br>
+                DUMMY STREET<br>
+                BUILDING 123<br>
+                HAZARIBAGH, JHARHAND, 825301</td>
+            <td colspan="3">
+                <span class="bold">SHIP TO:</span><br>
+                MS DHONI<br>
+                WILSON GARDEN<br>
+                SOUTHEAST BLOCK, RANCHI - 834001
+            </td>
+        </tr>
+        <tr>
+            <th>Qty.</th>
+            <th colspan="2">Item Code.</th>
+            <th>Description</th>
+            <th colspan="2">Unit Price</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td colspan="2">IABCDE</td>
+            <td>Pencils</td>
+            <td colspan="2">20.00</td>
+        </tr>
+        <tr>
+            <td>1000</td>
+            <td colspan="2">IN877</td>
+            <td>Notebooks</td>
+            <td colspan="2">100.00</td>
+        </tr>
+        <tr>
+            <td>500</td>
+            <td colspan="2">IP8675</td>
+            <td>Pens</td>
+            <td colspan="2">70.00</td>
+        </tr>
+        <tr>
+            <th colspan="4">Subtotal</th>
+            <td colspan="2">190.00</td>
+        </tr>
+        <tr>
+            <th colspan="3">GST</th>
+            <td>5%</td>
+            <td colspan="2">9.50</td>
+        </tr>
+        <tr>
+            <th colspan="4">Grand Total</th>
+            <td colspan="2">$ 199.50</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
