@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Choo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            height: 10rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 30%;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            padding: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">My Resume</h1>
+    <section>
+        <h2 class="section__title">About Me</h2>
+        <img src="profile-pic.jpg" alt="Profile picture">
+        <p> Hi, I am Eric and I am a self-taught front-end developer. <br>
+            I am a formerly a music teacher and a self-taught developer who have been teaching myself web development in
+            my spare time since September 2021. My goal is to change my career direction as a front-end developer an
+            later progress to a full stack developer.<br>
+        </p>
+    </section>
+    <section>
+        <h2 class="section__title">Work Experience</h2>
+        <h4>Music teacher (2019-present)</h4>
+        <ul>
+            <li>Determining student goals and objectives, and discussing lesson details with them before committing to a
+                plan.</li>
+            <li>Preparing students for exams, concerts, and other events.</li>
+            <li>Motivating students, especially when they are struggling and progress is slow.</li>
+        </ul>
+    </section>
+    <h2 class="section__title">Skills</h2>
+
+    <table>
+        <tr>
+            <th colspan="2">Skills</th>
+            <th>Tools</th>
+        </tr>
+        <tr>
+            <td colspan="2">HTML5, CSS3, Javascript</td>
+            <td>Git and Github</td>
+        </tr>
+        <tr>
+            <td colspan="2">Bootstrap</td>
+            <td>VS Code</td>
+        </tr>
+        <tr>
+            <td colspan="2">Sass</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2">TailwindCSS</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <section>
+        <h2 class="section__title">Contact Me</h2>
+        <form action="#" class="contact-form">
+
+            <div>
+                <label for="name">Your name: </label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Your email: </label>
+                <input type="email" name="email" id="email">
+            </div>
+            <di>
+                <label for="message">Your message;</label>
+                <textarea name="message" id="message" cols="30" rows="8"></textarea>
+            </di>
+            <button type="submit">Submit</button>
+
+        </form>
+    </section>
+    <footer>
+        <h2 class="section__title">Find me here:</h2>
+        <a href="https://github.com/ericcst197" target="_blank">Github</a>
+    </footer>
+
+</body>
+
+</html>
