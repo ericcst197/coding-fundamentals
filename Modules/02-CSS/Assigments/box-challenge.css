@@ -1,0 +1,28 @@
+.box{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-1{
+    background-color: lightpink;
+}
+
+.box-2{
+    background-color: lightyellow;
+}
+
+.box-3{
+    background-color: lightblue;
+}
+
+.box-4{
+    background-color: lightgreen;
+}
+
