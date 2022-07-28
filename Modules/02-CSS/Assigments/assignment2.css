@@ -1,0 +1,28 @@
+.breadcrumb {  
+    padding: 1rem 3rem;
+    background-color: lightgray;
+    list-style-type: none;
+}
+  
+.breadcrumb li {
+    display: inline;
+    cursor: default;
+}
+  
+.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+    padding: 3px 0;
+}
+
+.breadcrumb li a:hover{
+    color: #7d6fd7;
+    border-bottom: 2px solid #7d6fd7;
+}
+
+.breadcrumb li:not(:first-child)::before{
+    content: '/';
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 0 2rem;
+}
