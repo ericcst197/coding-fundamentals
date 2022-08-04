@@ -1,0 +1,219 @@
+.contact__card{
+    width: 95%;
+    margin: 0 auto;
+
+
+}
+
+.hidden{
+    display: none;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+
+
+}
+
+.card{
+    width:97%;
+    height: 95%;
+    display: flex;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 200;
+    position: absolute;
+    top: 1rem;
+    /* right: 1rem; */
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.card__left{
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #c28bea,#a86ad4);
+    width: 30%;
+    color: rgb(255, 255, 255, .9);
+    padding: 3rem;
+    
+}
+
+.card__left > * + * {
+    margin-top: 2rem;
+}
+
+.card__left h5 {
+    font-size: 1rem;
+}
+
+.contact__phone,
+.contact__email {
+    display: flex;
+    align-items: center;
+}
+
+.contact__icon{
+    transform: translateY(3px);
+    margin-right: 1rem;
+}
+
+.social__list{
+    display: flex;
+    list-style-type: none;
+    margin-top: 3rem;
+}
+
+.social__item:not(:first-of-type){
+    margin-left: 3rem;
+}
+
+.social__link{
+    color: rgb(255, 255, 255, .8);
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+
+.card__right{
+    width: 70%;
+    padding: 1.5rem 6rem;
+    background-color: #fff;
+    position: relative;
+}
+
+.card__btn-close{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    margin-top: 1.6rem;
+}
+
+
+.form__input{
+    display: flex;
+    flex-direction: column;
+}
+
+.form h5,
+.input-five,
+.input-six{
+    grid-column-start: span 2;
+}
+
+.form__input input,
+.form__input textarea{
+    height: 2.5rem;
+    margin-top: .3rem;
+    border: none;
+    outline: 2px solid #c28bea;
+    border-radius: 4px;
+    padding: 0 1rem;
+}
+
+.form__input textarea{
+    width: 100%;
+    min-height: 6rem;
+    max-height: 12rem;
+    resize: vertical;
+    padding: .7rem 1rem;
+}
+
+.btn-submit{
+    grid-column-start: 2;
+    width: 50%;
+    padding: .5rem 2rem;
+    margin-left: auto;
+    font-weight: 500;
+    color: #fff;
+    background-color: #c28bea;
+    border: 1px solid #c28bea;
+    border-radius: 1rem;
+    transition: all .2s;
+}
+
+.btn-submit:active{
+    background-color: #929dff;
+    transform: translate(-.1rem,.1rem);
+    box-shadow: -2px 3px 5px #dedede;
+}
+
+@media (max-width:980px){
+    .overlay{
+        background-color: rgba(0,0,0,.5);
+    }
+
+    .card{
+        flex-direction: column;
+        width:95%;
+        height: min-content;
+        padding-bottom: 2rem;
+    }
+    
+    .card__left{
+        background-image: linear-gradient(to bottom right, #c28bea,#a86ad4);
+        width: 100%;
+        height: fit-content;
+        padding: 2rem;
+        color: rgb(255, 255, 255, .9);
+        position: relative;
+    }
+
+    .card__left > * + * {
+        margin-top: 1rem;
+    }
+
+    .card__right{
+        width: 100%;
+        padding: 1rem 4rem;
+        background-color: #fff;
+        position: relative;
+        border-bottom-right-radius:1rem;
+        border-bottom-left-radius:1rem
+    }
+
+    .card__right > .card__btn-close{
+        display: none;
+    }
+
+    .social__list{
+        margin-top: 1.5rem;
+    }
+
+    .form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        width: 100%;
+        height: 100%;
+        margin-top: 1.6rem;
+    }
+}
+
+@media (max-width:600px){
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 1.6rem;
+    }
+}
