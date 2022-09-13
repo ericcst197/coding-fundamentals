@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    padding: 4rem;
+    font-size: 1.3rem;
+}
+
+.form{
+    margin-top: 1.5rem;
+    height: 2rem;
+}
+
+.form input{
+    width: 12rem;
+    padding: .5rem;
+}
+
+.form button{
+    width: 8rem;
+    height: 2rem;
+}
+
+.result {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 13rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 3rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.avatar {
+    width: 12rem;
+    height: 12rem;
+    /* background-color: orange; */ 
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.info {
+    flex: 1;
+    padding: 0 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bio {
+    margin-top: 2rem;
+    flex: 1
+}
