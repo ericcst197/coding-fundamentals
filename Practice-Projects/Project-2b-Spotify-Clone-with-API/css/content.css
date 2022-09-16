@@ -1,0 +1,99 @@
+#content {
+    position: relative;
+    width: calc(100% - 269px);
+    height: 100%;
+    margin-left: 268px;
+    overflow: auto;
+    font-size: 0.875rem;
+}
+
+#content section {
+    padding: 50px 48px 0
+}
+
+#content section:first-child{
+    padding-top: 100px;
+}
+
+#content section:last-child{
+    padding-bottom: 100px;
+}
+
+#content section .card-wrapper{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    column-gap: 24px;
+}
+
+#content section .card-wrapper .card{
+    width: 148px;
+    height: 239px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #1f1f1f;
+    padding: 16px;
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    row-gap: 15px;
+    transition: background-color .3s ease; 
+    position: relative;
+}
+
+#content section .card-wrapper .card:hover{
+    background-color: #282828;
+}
+
+#content section .card-wrapper .card .mdi-play{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #1fdf64;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .3);
+    color:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+#content section .card-wrapper .card:hover .mdi-play{
+    opacity: 1;
+    bottom: 42%;
+}
+
+#content section .card-wrapper .card img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+#content .title{
+    font-weight: bold;
+    letter-spacing: 1px;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+#content .subtitle{
+    font-size: small;
+    font-weight: 200;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    color: #a7a7a7;
+}
