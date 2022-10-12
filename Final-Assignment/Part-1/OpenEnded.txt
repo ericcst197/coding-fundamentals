@@ -1,0 +1,39 @@
+1.  Loop is used to executed a group of instructions of code 
+    that we don't have to write it repeatedly.
+
+    for(start_value ; increment_value ; end_value){
+    // your code here
+    }
+
+2.  Console.log() is a function will only show the value on the console, 
+    it basically used to debugging.
+
+    A return value will terminate the function and possibly return a value 
+    that can be stored as a variable
+
+
+3.  Truthy value (in javascript) are:
+    - '0' (a string containing a single zero)
+    - 'false' (a string containing the text “false”)
+    - [] (an empty array)
+    - {} (an empty object)
+    - function(){} (an “empty” function)
+
+    Falsy value (in javascript) are: 
+    - false
+    - 0 (zero)
+    - '', "", `` (empty string)
+    - null
+    - undefined
+    - NaN
+
+4. Internet is a large network of computers which communicate all together.
+
+5.  How does a website work?
+    - When clients(web user) type a web address into the browser.
+    - The browser goes to the DNS server and find the real IP address in the server.
+    - The broswer send HTTP request to ask a copy of the website to the client.
+    - If the server approves the client's request, the server sends the client a "OK" message.
+    - The browser collects small chunks (e.g. HTML, CSS ,Javascript) into a complete web page and displays it to you.
+
+Files are involved to displays the website : HTML, CSS ,Javascript
