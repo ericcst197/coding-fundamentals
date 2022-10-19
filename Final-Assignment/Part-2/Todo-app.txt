@@ -1,0 +1,10 @@
+Build a todo app 
+
+I have build and push my project in my github profile
+You can read details from the repository.
+
+
+These are the links to view the project.
+
+1. Github link: https://github.com/ericcst197/vue-todo-app
+2. Live demo: https://ericcst197-vue-todo-app.netlify.app/
